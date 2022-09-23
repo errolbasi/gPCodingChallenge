@@ -102,7 +102,11 @@ public class MainDashboardActivity extends BaseActivity {
                 break;
 
             case Placeholder2:
-                throw new RuntimeException("User clicked a Placeholder button");
+                // I added Alert Dialog when the user tap the Under Construction Btn
+                showAlertDialog(
+                        R.string.common_under_construction,
+                        R.string.under_construction_alert_message,
+                        R.string.common_acknowledged);
         }
     }
 
